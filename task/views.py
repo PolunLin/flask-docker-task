@@ -88,12 +88,12 @@ def init_task(app):
         try:
             deleted_task = Task.query.filter_by(id=id).first()
             if not deleted_task:
-                context['result'] = [{"msg":"Error Input: Can't find this record."}]
+                context['result'] = {"msg":"Error Input: Can't find this record."}
                 return context, 404
             else:
                 db.session.delete(deleted_task)
                 db.session.commit()
-                context['result'] = [{"msg":f"Delete id {id} successfully"}]
+                context['result'] = {"msg":f"Delete id {id} successfully"}
                 return context, 200
         except:
             db.session.rollback()
