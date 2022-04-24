@@ -2,7 +2,7 @@
 
 ## About
 
-* Use flask and docker to create a service that can manage tasks.
+* Implement a Restful task list API as well as run this application in container.
 * Project status: working
 
 ## Table of contents
