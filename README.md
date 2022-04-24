@@ -65,7 +65,10 @@ pip install -r requirments.txt
 
     ```
 
-    curl -X POST -H "Content-Type: application/json" -d '{"name": "買晚餐, "status": 0}' "localhost:8080/task"
+    curl -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"name": "買晚餐"}' \
+    "localhost:8080/task"
 
     ```
     Response
@@ -78,7 +81,10 @@ pip install -r requirments.txt
 3. PUT /task/<id> (update task)
 
     ```
-    curl -X PUT -H "Content-Type: application/json" -d '{"name": "買早餐", "status": 1}' "localhost:8080/task/1"
+    curl -X PUT \
+    -H "Content-Type: application/json" \
+     -d '{"name": "買早餐", "status": 1}' \
+     "localhost:8080/task/1"
     ```
     Response
     ```
@@ -94,7 +100,13 @@ pip install -r requirments.txt
 4. DELETE /task/<id> (delete task)
 
     ```
-    curl -X DELETE "localhost/task/1" 
+    curl -X DELETE "localhost:8080/task/1" 
     ```
-    
-    response status code 200
+
+    ```
+    {
+    "result": {
+        "msg": "Delete id 1 successfully"
+    }
+    }
+    ```
