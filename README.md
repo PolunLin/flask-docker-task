@@ -36,7 +36,7 @@ pip install -r requirments.txt
 2. Use Dockerfile to create image
 
 
-    ```
+    ```bash
 
     docker image build -t gogolook .
     docker run -d -p 8080:8080 --name flask_app gogolook
@@ -47,13 +47,13 @@ pip install -r requirments.txt
 
 1.  GET /tasks (list tasks)
 
-    ```
+    ```bash
 
     curl -X GET "localhost:8080/tasks"
 
     ```
     Response
-    ```
+    ```json
     {
         "result": [
             {"id": 1, "name": "name", "status": 0}
@@ -63,7 +63,7 @@ pip install -r requirments.txt
 
 2.  POST /task  (create task)
 
-    ```
+    ```bash
 
     curl -X POST \
     -H "Content-Type: application/json" \
@@ -72,7 +72,7 @@ pip install -r requirments.txt
 
     ```
     Response
-    ```
+    ```json
     {
         "result": {"name": "買晚餐", "status": 0, "id": 1}
     }
@@ -80,14 +80,14 @@ pip install -r requirments.txt
 
 3. PUT /task/<id> (update task)
 
-    ```
+    ```bash
     curl -X PUT \
     -H "Content-Type: application/json" \
      -d '{"name": "買早餐", "status": 1}' \
      "localhost:8080/task/1"
     ```
     Response
-    ```
+    ```json
     {
     "result":{
         "name": "買早餐",
@@ -99,11 +99,11 @@ pip install -r requirments.txt
 
 4. DELETE /task/<id> (delete task)
 
-    ```
+    ```bash
     curl -X DELETE "localhost:8080/task/1" 
     ```
 
-    ```
+    ```json
     {
     "result": {
         "msg": "Delete id 1 successfully"
