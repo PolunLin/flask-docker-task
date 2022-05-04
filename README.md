@@ -4,7 +4,6 @@
 
 * Implement a Restful task list API as well as run this application in container.
 * Project status: working
-
 ## Table of contents
 
 >   * [Gogolook Coding Exercise](https://github.com/PolunLin/gogolook-exercise)
@@ -14,7 +13,25 @@
 >   * [Usage](#usage)
 >   * [Result](#result)
 
-
+## Repository
+```bash
+.
+├── Dockerfile                      // create docker container
+├── README.md
+├── app                             // main application,database and setting
+│   ├── __init__.py
+│   └── config
+│       ├── config.py               // application config
+│       ├── development.db
+│       └── test.db                 // database for test
+├── manage.py                       // application start entry       
+├── requirements.txt
+├── task                            // task application
+│   ├── models
+│   │   └── task.py
+│   └── views.py
+└── unit_test.py                    // test file
+```
 ## Installation
 
 ```bash
