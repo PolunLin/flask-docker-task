@@ -5,15 +5,15 @@
 * Implement a Restful task list API as well as run this application in container.
 * Project status: working
 ## Table of contents
+- [Gogolook Coding Exercise](#gogolook-coding-exercise)
+  - [About](#about)
+  - [Table of contents](#table-of-contents)
+  - [Repository struct](#repository-struct)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Result](#result)
 
->   * [Gogolook Coding Exercise](https://github.com/PolunLin/gogolook-exercise)
->   * [About](#about)
->   * [Table of contents](#table-of-contents)
->   * [Installation](#installation)
->   * [Usage](#usage)
->   * [Result](#result)
-
-## Repository
+## Repository struct
 ```bash
 .
 ├── Dockerfile                      // create docker container
