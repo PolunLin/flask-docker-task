@@ -4,6 +4,8 @@
 
 * Implement a Restful task list API as well as run this application in container.
 * Project status: working
+* enviroment: python==3.9, flask==2.0.3
+* Database:sqlite3, flask_sqlalchemy
 ## Table of contents
 - [Gogolook Coding Exercise](#gogolook-coding-exercise)
   - [About](#about)
