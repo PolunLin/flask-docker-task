@@ -1,4 +1,4 @@
-# Flask-docker-task
+# Flask docker task
 
 ## About
 
@@ -7,7 +7,7 @@
 * enviroment: python==3.9, flask==2.0.3
 * Database:sqlite3, flask_sqlalchemy
 ## Table of contents
-- [Gogolook Coding Exercise](#gogolook-coding-exercise)
+- [Flask docker task](#Flask-docker-task)
   - [About](#about)
   - [Table of contents](#table-of-contents)
   - [Repository struct](#repository-struct)
