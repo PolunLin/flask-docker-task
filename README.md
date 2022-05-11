@@ -1,4 +1,4 @@
-# Gogolook Coding Exercise
+# Flask-docker-task
 
 ## About
 
